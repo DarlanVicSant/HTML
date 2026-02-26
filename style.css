@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- LOGO -- >
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    
+    <h2>titulo</h2>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam. Voluptas, voluptate. Doloribus, quisquam.
+</p>
+
+
+<!-- link -->
+
+<a href="https://www.senai.br/">Google</a>
+
+<a href="https://google.com.br" target="_blank" real="noopener noreferrer">Google</a>
+
+<button>
+    <a href="segunda_pagina.html">segunda pagina</a>
+</button>
