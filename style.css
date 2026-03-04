@@ -1,29 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- LOGO -- >
-    <div class="logo">
-        <img src="logo.png" alt="Logo">
-    
-    <h2>titulo</h2>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+scroll-behavior:smooth;
+}
 
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam. Voluptas, voluptate. Doloribus, quisquam.
-</p>
+body{
+background:#fff;
+color:#222;
+}
 
+header{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+transition:0.4s;
+z-index:1000;
+}
 
-<!-- link -->
+header.scrolled{
+background:#fff;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
 
-<a href="https://www.senai.br/">Google</a>
+.logo{
+font-size:26px;
+font-weight:bold;
+color:#6600cc;
+}
 
-<a href="https://google.com.br" target="_blank" real="noopener noreferrer">Google</a>
+nav{
+display:flex;
+gap:30px;
+}
 
-<button>
-    <a href="segunda_pagina.html">segunda pagina</a>
-</button>
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.btn-nav{
+background:#6600cc;
+color:#fff !important;
+padding:8px 20px;
+border-radius:30px;
+}
+
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(102,0,204,0.6),rgba(255,0,204,0.6)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.btn-primary{
+display:inline-block;
+background:#fff;
+color:#6600cc;
+padding:12px 30px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-primary:hover{
+transform:scale(1.05);
+}
+
+.section{
+padding:120px 60px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:50px;
+}
+
+.card{
+width:300px;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card span{
+display:block;
+margin:15px 0;
+font-weight:bold;
+color:#6600cc;
+}
+
+.card button{
+padding:10px 20px;
+border:none;
+background:#6600cc;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+.destaque{
+border:2px solid #6600cc;
+}
+
+.dark{
+background:#6600cc;
+color:white;
+}
+
+.benefits{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.image-section{
+background:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.image-text{
+background:rgba(0,0,0,0.6);
+padding:60px;
+border-radius:20px;
+display:inline-block;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#111;
+color:white;
+}
+
+@media(max-width:900px){
+nav{
+position:absolute;
+top:80px;
+right:-100%;
+flex-direction:column;
+background:white;
+padding:20px;
+transition:0.3s;
+}
+
+nav.active{
+right:0;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+}
